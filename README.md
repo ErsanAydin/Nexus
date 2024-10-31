@@ -94,7 +94,17 @@ cargo nexus prove
 cargo nexus verify
 ```
 
-#
+#LoG kontrol
+```console
+wget -qO - https://raw.githubusercontent.com/zunxbt/nexus-prover/main/nexus.sh | bash
+```
+```console
+systemctl status nexus.service
+```
+```console
+journalctl -u nexus.service -f -n 50
+```
+
 
 > Bu dizinde ki `nexus-proof`dosyamızı kaydedip saklayalım
 
